@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={roboto_mono.className}>
       <head>
-        <link rel="icon" href="./favicon.ico" sizes="any" />
+        {/* <link rel="icon" href="favicon.ico" sizes="any" /> // Web ICON */}
       </head>
       <body className={`antialiased`}>
         <Navbar />
