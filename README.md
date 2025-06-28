@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 ReComunity Website
 
-## Getting Started
+A web platform for **KMUTNB Robotic Engineering** designed to enhance the learning experience and foster collaboration among students and educators.
 
-First, run the development server:
+---
+
+## 🚀 Getting Started
+
+This project uses the following tech stack:
+
+- [Next.js (App Router)](https://nextjs.org/docs/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/docs/)
+- [DaisyUI](https://daisyui.com/docs/)
+
+### 📦 Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 UI Design
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Font
 
-## Learn More
+- `Roboto Mono` – clean, modern, and readable.
 
-To learn more about Next.js, take a look at the following resources:
+### Theme
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ☀️ Light Mode: `bumblebee`
+- 🌙 Dark Mode: `dim`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Color Variables
 
-## Deploy on Vercel
+These custom CSS variables are used to control the theme appearance via DaisyUI:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```css
+--color-base-100
+--color-base-200
+--color-base-300
+--color-base-content
+--color-primary
+--color-primary-content
+--color-secondary
+--color-secondary-content
+--color-accent
+--color-accent-content
+--color-neutral
+--color-neutral-content
+--color-info
+--color-info-content
+--color-success
+--color-success-content
+--color-warning
+--color-warning-content
+--color-error
+--color-error-content
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📚 Documentation
+
+- 🌐 [Next.js Documentation](https://nextjs.org/docs/)
+- 🎨 [Tailwind CSS Docs](https://tailwindcss.com/docs/)
+- 💡 [DaisyUI Docs](https://daisyui.com/docs/)
