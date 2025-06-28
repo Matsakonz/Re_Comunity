@@ -1,9 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: emerald --default, dim --prefersdark;
+  themes: bumblebee --default, dim --prefersdark;
+  /* themes: bumblebee --default; */
 }
 
 body {
-  background: #fff;
   font-family: "Roboto Mono";
 }

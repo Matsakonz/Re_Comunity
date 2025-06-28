@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer"
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer"
+import ThemeProvider from "../providers/Themeprovider"
 
 const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "ReComunity",
+  title: "RECOMUNITY",
   description: "Web for Re Student",
   icons:{
     icon:['/favicon.ico']
@@ -23,13 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={roboto_mono.className}>
-      <head>
-        {/* <link rel="icon" href="favicon.ico" sizes="any" /> // Web ICON */}
-      </head>
-      <body className={`antialiased`}>
-        <Navbar />
-        {children}
-        <Footer />
+      <body className="bg-base-100 duration-450">
+        <ThemeProvider>
+            <Navbar />
+            {children}
+            <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
