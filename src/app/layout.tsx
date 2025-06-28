@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer"
 
 const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
