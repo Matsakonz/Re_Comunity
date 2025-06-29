@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import { useTheme } from "next-themes"
-import { ThemeToggle } from "@/components/theme-toggle";
+import { ThemeToggle } from "@/theme_changer/theme-toggle";
 
 
 export default function Navbar() {
