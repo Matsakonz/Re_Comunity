@@ -15,7 +15,7 @@ const roboto_mono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RECOMUNITY",
+  title: "RECOMMUNITY",
   description: "Web for Re Student",
   icons:{
     icon:['/favicon.ico']

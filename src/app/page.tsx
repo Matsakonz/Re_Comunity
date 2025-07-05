@@ -2,7 +2,9 @@ import { auth, signIn, signOut } from "@/app/auth"
 import { redirect } from 'next/navigation'
 import LogoutBtn from "./pages/components/LogoutBtn";
 import Signin from "./components/Signin";
+import SigninSm from "./components/SigninSm";
 import Alert from "./components/Alert";
+import AlertSm from "./components/AlertSm";
 
 export default async function Home() {
     const session = await auth();
@@ -14,7 +16,17 @@ export default async function Home() {
         if (re_id == "0102361") {
             return redirect('/pages/')
         }
-        return <Alert/>
+        return (
+            <div>
+                <div className="max-md:hidden"><Alert/></div>
+                <div className="max-md:block md:hidden"><AlertSm/></div>
+            </div>
+        )
     } 
-    return <Signin/>
+    return (
+        <div>
+            <div className="max-md:hidden"><Signin/></div>
+            <div className="max-md:block md:hidden"><SigninSm/></div>
+        </div>
+    )
 } 
