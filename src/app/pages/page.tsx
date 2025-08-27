@@ -20,8 +20,7 @@ export default function Home() {
 
       <div className="px-[60px] pb-[10px]">
         <p className="text-[24px] font-bold pb-[10px]">Lecture</p>
-        <div className="flex justify-between">
-          <Card img={imgsrc} title={title} detail={detail} />
+        <div className="flex justify-between gap-[10px]">
           <Card img={imgsrc} title={title} detail={detail} />
           <Card img={imgsrc} title={title} detail={detail} />
           <Card img={imgsrc} title={title} detail={detail} />
@@ -33,8 +32,7 @@ export default function Home() {
 
       <div className="px-[60px] pb-[50px]">
         <p className="text-[24px] font-bold pb-[10px]">House</p>
-        <div className="flex justify-between">
-          <Card img={imgsrc} title={title} detail={detail} />
+        <div className="flex justify-between gap-[10px]">
           <Card img={imgsrc} title={title} detail={detail} />
           <Card img={imgsrc} title={title} detail={detail} />
           <Card img={imgsrc} title={title} detail={detail} />

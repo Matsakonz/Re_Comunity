@@ -21,7 +21,7 @@ export default function CustomDropdown() {
   }, [])
 
   return (
-    <div className="absolute w-[150px] max-w-xs bg-base-300 rounded-xl p-[8px]" ref={dropdownRef}>
+    <div className="absolute w-[150px] max-w-xs bg-base-300 rounded-xl p-[8px] duration-450" ref={dropdownRef}>
       {/* Trigger */}
       <div onClick={() => setIsOpen(!isOpen)} className="flex justify-between items-center bg-base-300 text-base-content pr-1 pl-2 py-2 rounded-md cursor-pointer transition hover:bg-base-200">
         <span>{selected}</span>

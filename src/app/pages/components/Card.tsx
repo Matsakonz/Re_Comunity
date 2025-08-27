@@ -8,8 +8,8 @@ type Props = {
 
 export default function Card({ img, title, detail }: Props) {
   return (
-    <div className="pr-[10px]">
-        <Link href="#" className="card bg-base-100 w-68 shadow-sm hover:-translate-y-1 hover:scale-103">
+    <div className="bg-base-100 duration-450">
+        <Link href="#" className="card w-68 shadow-sm hover:-translate-y-1 hover:scale-103">
         <figure>
             <img src={img}/>
         </figure>
