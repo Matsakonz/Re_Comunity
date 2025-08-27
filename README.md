@@ -1,4 +1,4 @@
-# 🧠 ReComunity Website
+# 🧠 ReCommunity Website
 
 A web platform for **KMUTNB Robotic Engineering** designed to enhance the learning experience and foster collaboration among students and educators.
 
