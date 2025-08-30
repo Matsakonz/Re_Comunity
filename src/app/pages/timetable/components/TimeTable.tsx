@@ -1,6 +1,6 @@
 export default function TimeTable() {
   return (
-    <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 mt-[50px] ml-[25px] duration-450">
+    <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-200 duration-450 p-2">
         <table className="table">
             {/* head */}
             <thead>
@@ -33,38 +33,24 @@ export default function TimeTable() {
             <tbody>
                 <tr>
                     <th>Mon</th>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <th>Tue</th>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <th>Wed</th>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <th>Thur</th>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <th>Fri</th>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <th>Sat</th>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <th>Sun</th>
-                    <td></td>
-                    <td></td>
                 </tr>
             </tbody>
         </table>

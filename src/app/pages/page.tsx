@@ -1,6 +1,8 @@
 import Card from "./components/Card";
+import CardSlider from "./components/slider";
 import Herobanner from "./components/Herobanner";
 import Link from "next/link"
+import TimeTable from "./timetable/components/TimeTable";
 
 export default function Home() {
 
@@ -13,31 +15,20 @@ export default function Home() {
       <Herobanner/>
       <div className="px-[60px] pb-[20px]">
         <p className="text-[24px] font-bold pb-[10px]">Timetable</p>
-        <Link href="#" className="card bg-base-100 w-180 shadow-sm hover:-translate-y-1 hover:scale-103">
-            <img src="https://datavizcatalogue.com/methods/images/top_images/timetable.png" alt="Timetable"/>
-        </Link>
+        <TimeTable/>
       </div>
 
-      <div className="px-[60px] pb-[10px]">
-        <p className="text-[24px] font-bold pb-[10px]">Lecture</p>
-        <div className="flex justify-between gap-[10px]">
-          <Card img={imgsrc} title={title} detail={detail} />
-          <Card img={imgsrc} title={title} detail={detail} />
-          <Card img={imgsrc} title={title} detail={detail} />
-          <Card img={imgsrc} title={title} detail={detail} />
-          <Card img={imgsrc} title={title} detail={detail} />
+      <div className="px-[60px]">
+        <p className="text-[24px] font-bold mb-[-20px]">Lecture</p>
+        <div className="mx-[-8px]">
+          <CardSlider/>
         </div>
-        <div className="flex justify-end mt-[20px] mr-[10px]"><button className="btn btn-outline">MORE</button></div>
       </div>
 
-      <div className="px-[60px] pb-[50px]">
-        <p className="text-[24px] font-bold pb-[10px]">House</p>
-        <div className="flex justify-between gap-[10px]">
-          <Card img={imgsrc} title={title} detail={detail} />
-          <Card img={imgsrc} title={title} detail={detail} />
-          <Card img={imgsrc} title={title} detail={detail} />
-          <Card img={imgsrc} title={title} detail={detail} />
-          <Card img={imgsrc} title={title} detail={detail} />
+      <div className="px-[60px] mt-[-20px]">
+        <p className="text-[24px] font-bold mb-[-20px]">House</p>
+        <div className="mx-[-8px]">
+          <CardSlider/>
         </div>
         <div className="flex justify-end mt-[20px] mr-[10px]"><button className="btn btn-outline">MORE</button></div>
       </div>

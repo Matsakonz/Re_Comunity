@@ -6,8 +6,7 @@ import { useTheme } from "next-themes"
 import { ThemeToggle } from "@/theme_changer/theme-toggle";
 import LogoutBtn from "./LogoutBtn";
 import Drawer from "./Drawer";
-import Image from "next/image";
-// import LogoutBtn from "./logoutBtn";
+import Image from 'next/image';
 
 
 export default function Navbar({ user }: { user: any }) {
@@ -40,16 +39,12 @@ export default function Navbar({ user }: { user: any }) {
           <div className="dropdown dropdown-end max-lg:hidden">
               <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                 <div className="rounded-full">
-                  <img
-                    alt="Tailwind CSS Navbar component"
+                  <Image
+                    src={user?.image}
                     width={38.4}
-                    src={user?.image} />
-                    {/* <Image
-                      src={user?.image}
-                      width={50}
-                      height={50}
-                      alt="Picture of the author"
-                    /> */}
+                    height={38.4}
+                    alt="Picture of the author"
+                  />
                 </div>
               </div>
               <ul

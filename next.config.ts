@@ -3,9 +3,12 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   devIndicators: false,
-  images: {
-    remotePatterns: [new URL('https://assets.example.com/account123/**')],
-  },
 };
+
+module.exports = {
+  images: {
+    domains: ['lh3.googleusercontent.com'],
+  },
+}
 
 export default nextConfig;

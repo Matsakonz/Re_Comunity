@@ -21,9 +21,9 @@ export default function CustomDropdown() {
   }, [])
 
   return (
-    <div className="absolute w-[150px] max-w-xs bg-base-300 rounded-xl p-[8px] duration-450" ref={dropdownRef}>
+    <div className="absolute w-[150px] max-w-xs bg-base-200 rounded-xl p-[8px] duration-450" ref={dropdownRef}>
       {/* Trigger */}
-      <div onClick={() => setIsOpen(!isOpen)} className="flex justify-between items-center bg-base-300 text-base-content pr-1 pl-2 py-2 rounded-md cursor-pointer transition hover:bg-base-200">
+      <div onClick={() => setIsOpen(!isOpen)} className="flex justify-between items-center bg-base-200 text-base-content pr-1 pl-2 py-2 rounded-md cursor-pointer transition hover:bg-base-100">
         <span>{selected}</span>
         <span className={`transform transition-transform duration-300  ${isOpen ? 'rotate-180' : 'rotate-0'}`}>
           <svg className='fill-base-content' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/></svg>
@@ -32,7 +32,7 @@ export default function CustomDropdown() {
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <ul className="w-full bg-base-300 text-base-content overflow-hidden">
+        <ul className="w-full bg-base-200 text-base-content overflow-hidden">
           {options.map((option) => (
             <li key={option} onClick={() => {setSelected(option), setIsOpen(false)}} className={`mt-2 pl-6 py-2 rounded-md hover:bg-base-200 transition cursor-pointer`}>
               {option}
